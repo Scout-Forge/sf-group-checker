@@ -33,7 +33,7 @@ function main() {
     combined.nations.push(json);
   }
 
-  const outPath = `${DATA_DIR}/groups.json`;
+  const outPath = `${DATA_DIR}/all-groups.json`;
   fs.writeFileSync(outPath, JSON.stringify(combined, null, 2));
 
   console.log(`✅ Wrote ${outPath} at ${now}`);
