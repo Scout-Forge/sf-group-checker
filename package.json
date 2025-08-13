@@ -7,6 +7,10 @@
   "scripts": {
     "validate": "node tools/validate.js",
     "merge": "node tools/merge.js",
-    "sort": "node tools/sort.js"
+    "sort": "node tools/sort.js",
+    "sort:scotland": "node tools/sort.js data/scotland.json",
+    "sort:england": "node tools/sort.js data/england.json",
+    "sort:ni": "node tools/sort.js data/northern-ireland.json",
+    "sort:wales": "node tools/sort.js data/wales.json"
   }
 }
