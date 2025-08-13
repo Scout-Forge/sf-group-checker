@@ -2,6 +2,13 @@
   "nation": "England",
   "units": [
     {
+      "name": "Greater London North",
+      "type": "county",
+      "children": [
+        { "name": "Barnet", "type": "district", "last_verified": "2025-08-13" }
+      ]
+    },
+    {
       "name": "West Yorkshire",
       "type": "county",
       "website": "https://wyscouts.org.uk",
@@ -9,13 +16,6 @@
       "children": [
         { "name": "Huddersfield South West", "type": "district", "website": "https://www.huddersfieldsouthwestscouts.org.uk", "last_verified": "2025-08-13" },
         { "name": "Huddersfield North", "type": "district", "last_verified": "2025-08-13" }
-      ]
-    },
-    {
-      "name": "Greater London North",
-      "type": "county",
-      "children": [
-        { "name": "Barnet", "type": "district", "last_verified": "2025-08-13" }
       ]
     }
   ]

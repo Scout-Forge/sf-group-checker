@@ -6,7 +6,7 @@ Nation → County/Area/Region → District → District.
 ## Endpoints (GitHub Pages)
 - https://scout-forge.github.io/sf-group-checker/data/all-groups.json (All groups in all territories)
 - https://scout-forge.github.io/sf-group-checker/data/england.json
-- https://scout-forge.github.io/sf-group-checker/data/roi.json
+- https://scout-forge.github.io/sf-group-checker/data/northern-ireland.json
 - https://scout-forge.github.io/sf-group-checker/data/scotland.json
 - https://scout-forge.github.io/sf-group-checker/data/wales.json
 - https://scout-forge.github.io/sf-group-checker/data/bso.json
