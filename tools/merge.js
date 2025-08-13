@@ -2,7 +2,7 @@
 import fs from "fs";
 
 const DATA_DIR = "data";
-const NATIONS = ["england", "scotland", "wales", "northern-ireland"];
+const NATIONS = ["england", "scotland", "wales", "roi", "bso"];
 
 function readJSON(path) {
   return JSON.parse(fs.readFileSync(path, "utf8"));
