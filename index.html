@@ -1,19 +1,195 @@
-<!doctype html><html lang="en"><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Scout UK Directory API</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Scout Forge Group Checker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Nunito Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Our styles -->
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <meta name="description" content="Browse UK Scouting structure by Country, Region and District as collapsible lists.">
+</head>
 <body>
-  <h1>Scout UK Directory API</h1>
-  <p>Read-only JSON of the UK Scouting structure. Use fetch/GET directly.</p>
-  <h2>Endpoints</h2>
-  <ul>
-    <li><a href="data/all-groups.json">data/all-groups.json</a> (All groups in all territories)</li>
-    <li><a href="data/england.json">data/england.json</a></li>
-    <li><a href="data/scotland.json">data/scotland.json</a></li>
-    <li><a href="data/wales.json">data/wales.json</a></li>
-    <li><a href="data/northern-ireland.json">data/northern-ireland.json</a></li>
-    <!-- <li><a href="data/bso.json">data/bso.json (British Scouting Overseas)</a></li> -->
-  </ul>
-  <h2>Schema</h2>
-  <p>See <a href="data/schema.json">data/schema.json</a></p>
-</body></html>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Scout Forge Group Checker</h1>
+      <p class="tagline">Countries → Regions → Districts, straight from <code>data/all-groups.json</code></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Overview -->
+    <section aria-labelledby="overview-heading" class="overview">
+      <h2 id="overview-heading" class="section-title">Overview</h2>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="statCountries">0</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statRegions">0</div>
+          <div class="stat-label">Regions / Counties / Areas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statDistricts">0</div>
+          <div class="stat-label">Districts</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statUpdated">—</div>
+          <div class="stat-label">Last generated</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collapsible lists -->
+    <section class="stacked" aria-labelledby="stacked-heading">
+      <h2 id="stacked-heading" class="section-title">Directory</h2>
+
+      <div id="stackedRoot" class="stacked-root" role="region" aria-live="polite" aria-busy="true">
+        <div class="loading">Loading data…</div>
+      </div>
+
+      <!-- Templates -->
+      <template id="nationTpl">
+        <details class="nation-details">
+          <summary class="nation-summary">
+            <span class="nation-name"></span>
+            <span class="count-badge regions"></span>
+          </summary>
+          <ul class="region-list"></ul>
+        </details>
+      </template>
+
+      <template id="regionTpl">
+        <li class="region-item">
+          <details class="region-details">
+            <summary class="region-summary">
+              <span class="region-name"></span>
+              <span class="count-badge districts"></span>
+            </summary>
+            <ul class="district-list"></ul>
+          </details>
+        </li>
+      </template>
+
+      <template id="districtTpl">
+        <li class="district-item">
+          <span class="district-name"></span>
+        </li>
+      </template>
+    </section>
+
+    <!-- Links -->
+    <section class="links" aria-labelledby="links-heading">
+      <h2 id="links-heading" class="section-title">Data & schema</h2>
+      <ul class="link-list">
+        <li><a href="data/all-groups.json">All groups JSON</a></li>
+        <li><a href="data/england.json">England</a></li>
+        <li><a href="data/scotland.json">Scotland</a></li>
+        <li><a href="data/wales.json">Wales</a></li>
+        <li><a href="data/northern-ireland.json">Northern Ireland</a></li>
+        <li><a href="data/schema.json">Schema</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Scout Forge Group Checker. Built for the community. Accessibility first.</p>
+    </div>
+  </footer>
+
+  <script>
+    const DATA_URL = "data/all-groups.json";
+
+    const stackedRoot = document.getElementById("stackedRoot");
+    const statCountries = document.getElementById("statCountries");
+    const statRegions = document.getElementById("statRegions");
+    const statDistricts = document.getElementById("statDistricts");
+    const statUpdated = document.getElementById("statUpdated");
+
+    const nationTpl = document.getElementById("nationTpl");
+    const regionTpl = document.getElementById("regionTpl");
+    const districtTpl = document.getElementById("districtTpl");
+
+    function countAll(data) {
+      const nations = (data.nations || []).length;
+      let regions = 0, districts = 0;
+      (data.nations || []).forEach(n => {
+        regions += (n.units || []).length;
+        (n.units || []).forEach(r => { districts += (r.children || []).length; });
+      });
+      return { nations, regions, districts };
+    }
+
+    async function loadData() {
+      try {
+        const res = await fetch(DATA_URL, { cache: "no-store" });
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status} ${res.statusText} for ${DATA_URL}`);
+        }
+        const data = await res.json();
+        if (!data || !Array.isArray(data.nations)) {
+          throw new Error(`Unexpected JSON shape. Expected { nations: [] } at top level.`);
+        }
+        render(data);
+      } catch (e) {
+        console.error(e);
+        stackedRoot.setAttribute("aria-busy", "false");
+        stackedRoot.innerHTML = `<div class="error">
+          Could not load data.<br>
+          <code>${e.message}</code>
+        </div>`;
+      }
+    }
+
+    function render(data) {
+      stackedRoot.innerHTML = "";
+      stackedRoot.setAttribute("aria-busy", "true");
+
+      const { nations, regions, districts } = countAll(data);
+      statCountries.textContent = nations;
+      statRegions.textContent = regions;
+      statDistricts.textContent = districts;
+      statUpdated.textContent = new Date(data.last_generated || Date.now()).toLocaleString();
+
+      (data.nations || []).forEach(n => {
+        const nFrag = nationTpl.content.cloneNode(true);
+        nFrag.querySelector(".nation-name").textContent = n.nation || "Unknown nation";
+        nFrag.querySelector(".count-badge.regions").textContent = (n.units || []).length;
+
+        const regionList = nFrag.querySelector(".region-list");
+
+        (n.units || []).forEach(u => {
+          const rFrag = regionTpl.content.cloneNode(true);
+          rFrag.querySelector(".region-name").textContent = u.name || "Unknown region";
+          rFrag.querySelector(".count-badge.districts").textContent = (u.children || []).length;
+
+          const districtList = rFrag.querySelector(".district-list");
+          (u.children || []).forEach(d => {
+            const dFrag = districtTpl.content.cloneNode(true);
+            dFrag.querySelector(".district-name").textContent = d.name || "Unknown district";
+            districtList.appendChild(dFrag);
+          });
+
+          regionList.appendChild(rFrag);
+        });
+
+        // default: nations collapsed, regions collapsed
+        // add `open` here if you want nations open by default:
+        // nFrag.firstElementChild.setAttribute("open", "");
+
+        stackedRoot.appendChild(nFrag);
+      });
+
+      stackedRoot.setAttribute("aria-busy", "false");
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
