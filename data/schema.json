@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Scout Forge Scout Group Directory",
+  "title": "Scout Forge - Scout Group Directory",
   "type": "object",
   "properties": {
     "nation": { "type": "string", "enum": ["England","Scotland","Wales","Northern Ireland", "British Scouting Overseas"] },
