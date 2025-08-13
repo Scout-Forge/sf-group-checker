@@ -4,12 +4,12 @@ Read-only JSON listing the UK and British Scouting Overseas (where possible) str
 Nation → County/Area/Region → District → District.
 
 ## Endpoints (GitHub Pages)
-- https://scout-forge.github.io/scout-uk-directory/data/all-groups.json (All groups in all territories)
-- https://scout-forge.github.io/scout-uk-directory/data/england.json
-- https://scout-forge.github.io/scout-uk-directory/data/roi.json
-- https://scout-forge.github.io/scout-uk-directory/data/scotland.json
-- https://scout-forge.github.io/scout-uk-directory/data/wales.json
-- https://scout-forge.github.io/scout-uk-directory/data/bso.json
+- https://scout-forge.github.io/sf-group-checker/data/all-groups.json (All groups in all territories)
+- https://scout-forge.github.io/sf-group-checker/data/england.json
+- https://scout-forge.github.io/sf-group-checker/data/roi.json
+- https://scout-forge.github.io/sf-group-checker/data/scotland.json
+- https://scout-forge.github.io/sf-group-checker/data/wales.json
+- https://scout-forge.github.io/sf-group-checker/data/bso.json
 
 ## Format
 See `data/schema.json`.
