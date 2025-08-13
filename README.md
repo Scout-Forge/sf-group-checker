@@ -1,6 +1,6 @@
 # Scout UK Directory (Public, Read-only API)
 
-Read-only JSON listing the UK and British Scouting Overseas (where possible) structure:
+Read-only JSON listing the UK structure:
 Nation → County/Area/Region → District → District.
 
 ## Endpoints (GitHub Pages)
@@ -9,7 +9,7 @@ Nation → County/Area/Region → District → District.
 - https://scout-forge.github.io/sf-group-checker/data/northern-ireland.json
 - https://scout-forge.github.io/sf-group-checker/data/scotland.json
 - https://scout-forge.github.io/sf-group-checker/data/wales.json
-- https://scout-forge.github.io/sf-group-checker/data/bso.json
+<!-- - https://scout-forge.github.io/sf-group-checker/data/bso.json -->
 
 ## Format
 See `data/schema.json`.

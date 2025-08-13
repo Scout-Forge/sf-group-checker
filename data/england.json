@@ -2,20 +2,652 @@
   "nation": "England",
   "units": [
     {
+      "name": "Avon",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Bailiwick of Guernsey",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Bedfordshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Birmingham",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Buckinghamshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Cambridgeshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Central Yorkshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Cheshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "City of Coventry",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Cleveland",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Cornwall",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Cumbria",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Derbyshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Devon",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Dorset",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Durham",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "East Lancashire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "East Sussex",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Essex",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Gloucestershire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Greater London Middlesex West",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
       "name": "Greater London North",
       "type": "county",
       "children": [
-        { "name": "Barnet", "type": "district", "last_verified": "2025-08-13" }
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Greater London North East",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Greater London South",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Greater London South West",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Greater Manchester East",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Greater Manchester North",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Greater Manchester West",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Hampshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Hereford & Worcester",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Hertfordshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Humberside",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Isle of Man",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Isle of Wight",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Jersey",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Kent",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Leicestershire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Lincolnshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Merseyside",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Norfolk",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "North Yorkshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Northamptonshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Northumberland",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Nottinghamshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Oxfordshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Royal Berkshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Shropshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Solihull",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Somerset",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "South Yorkshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Staffordshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Suffolk",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Surrey",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Warwickshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "West Lancashire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "West Mercia",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "West Sussex",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
       ]
     },
     {
       "name": "West Yorkshire",
       "type": "county",
-      "website": "https://wyscouts.org.uk",
-      "last_verified": "2025-08-13",
       "children": [
-        { "name": "Huddersfield South West", "type": "district", "website": "https://www.huddersfieldsouthwestscouts.org.uk", "last_verified": "2025-08-13" },
-        { "name": "Huddersfield North", "type": "district", "last_verified": "2025-08-13" }
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Wiltshire",
+      "type": "county",
+      "children": [
+        {
+          "name": "Barnet",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
       ]
     }
   ]

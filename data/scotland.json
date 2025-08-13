@@ -1,8 +1,318 @@
 {
   "nation": "Scotland",
   "units": [
-    { "name": "Clyde", "type": "region", "children": [
-      { "name": "Glasgow South East", "type": "district", "last_verified": "2025-08-13" }
-    ]}
+    {
+      "name": "Clyde",
+      "type": "region",
+      "children": [
+        {
+          "name": "Calder",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Clydesdale",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Eastwood",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Great Western",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Kelvin Valley",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "South East",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "South Western",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Strathcalder",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "East Scotland",
+      "type": "region",
+      "children": [
+        {
+          "name": "Arbroath",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Dundee",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Dunfermline",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Glenrothes & Levenmouth",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Kirkcaldy",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "North Angus",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "North East Fife",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Perth & Kinross",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Rosyth",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "South Angus",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Forth",
+      "type": "region",
+      "children": [
+        {
+          "name": "Clackmannanshire",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Falkirk",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Stirling & Trossachs",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "West Lothian",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Highlands & Islands",
+      "type": "region",
+      "children": [
+        {
+          "name": "Caithness and Sutherland",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Inverness, Nairn, Badenoch & Strathspey",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Lochaber",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Orkney",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Ross, Skye & Lochalsh",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Western Isles",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "North East Scotland",
+      "type": "region",
+      "children": [
+        {
+          "name": "Aberdeen",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Banff & Buchan",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Deeside",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Deveron",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Gordon",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Kincardineshire",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Moray",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Shetland",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "South East Scotland",
+      "type": "region",
+      "children": [
+        {
+          "name": "Borders",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Braid",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Craigalmond",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "East Lothian",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Edinburgh North East",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Midlothian",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Pentland",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "South West Scotland",
+      "type": "region",
+      "children": [
+        {
+          "name": "Ayrshire East",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Dumfriesshire",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Galloway",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Kyle & Carrick",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "North Ayrshire & Arran",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "West Scotland",
+      "type": "region",
+      "children": [
+        {
+          "name": "Argyll",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Dunbartonshire",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Greenock & District",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Paisley",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Renfrewshire",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    }
   ]
 }

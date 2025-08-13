@@ -1,8 +1,237 @@
 {
   "nation": "Wales",
   "units": [
-    { "name": "Clyde", "type": "region", "children": [
-      { "name": "Glasgow South East", "type": "district", "last_verified": "2025-08-13" }
-    ]}
+    {
+      "name": "Brecknock",
+      "type": "region",
+      "children": [
+        {
+          "name": "Breckon & Glanusk",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Buith Wells",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Ystradgynlais",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Cardiff & Vale",
+      "type": "region",
+      "children": [
+        {
+          "name": "Cardiff East",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Cardiff North",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Cardiff West",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Penarth & District",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Tir a Môr",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Carmarthenshire",
+      "type": "region",
+      "children": [
+        {
+          "name": "Carmarthenshire",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Ceredigion",
+      "type": "region",
+      "children": [
+        {
+          "name": "North Ceredigion",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Teifi",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Clwyd",
+      "type": "region",
+      "children": [
+        {
+          "name": "Flintshire",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Llangollen",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Vale of Clwyd",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Wrexham",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Eryri Y Môn",
+      "type": "region",
+      "children": [
+        {
+          "name": "Conwy",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Gwynedd",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Ynys Môn",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Glamorgan",
+      "type": "region",
+      "children": [
+        {
+          "name": "Afan Nedd",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Cwm Newydd",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Swansea & Gower",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Gwent",
+      "type": "region",
+      "children": [
+        {
+          "name": "Blaenau Gwent",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Monmouthshire",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Newport",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Torfaen",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Mid Glamorgan",
+      "type": "region",
+      "children": [
+        {
+          "name": "Bridgend",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "CRAI",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Merthyr Tydfil",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Rhondda Cynon Taf",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Montgomeryshire",
+      "type": "region",
+      "children": [
+        {
+          "name": "Montgomeryshire",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Pembrokeshire",
+      "type": "region",
+      "children": [
+        {
+          "name": "Pembrokeshire",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "Radnor",
+      "type": "region",
+      "children": [
+        {
+          "name": "Radnor",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    }
   ]
 }

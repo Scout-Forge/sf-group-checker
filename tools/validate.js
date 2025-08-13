@@ -26,7 +26,7 @@ const dataFiles = [
   "england.json",
   "scotland.json",
   "wales.json",
-  "bso.json",
+  // "bso.json",
   "northern-ireland.json"
 ];
 

@@ -1,8 +1,99 @@
 {
   "nation": "Northern Ireland",
   "units": [
-    { "name": "Clyde", "type": "region", "children": [
-      { "name": "Glasgow South East", "type": "district", "last_verified": "2025-08-13" }
-    ]}
+    {
+      "name": "East",
+      "type": "region",
+      "children": [
+        {
+          "name": "East Belfast",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "North Down",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Strangford",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "North",
+      "type": "region",
+      "children": [
+        {
+          "name": "North Belfast",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "North West Belfast",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Slemish",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "South East Antrim",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "South",
+      "type": "region",
+      "children": [
+        {
+          "name": "Armagh",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Lagan",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Lisburn",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "South Down",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    },
+    {
+      "name": "West",
+      "type": "region",
+      "children": [
+        {
+          "name": "Fermanagh",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Londonderry",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        },
+        {
+          "name": "Tyrone",
+          "type": "district",
+          "last_verified": "2025-08-13"
+        }
+      ]
+    }
   ]
 }
