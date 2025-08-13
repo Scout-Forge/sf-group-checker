@@ -1,11 +1,34 @@
-name: Validate data
-on: [push, pull_request]
+name: Validate and Merge Data
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
 jobs:
-  validate:
+  validate-merge:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
-        with: { node-version: '20' }
-      - run: npm i ajv ajv-formats
-      - run: node tools/validate.js
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install ajv ajv-formats
+
+      - name: Validate JSON files
+        run: node tools/validate.js
+
+      - name: Merge JSON files
+        run: node tools/merge.js
+
+      - name: Commit merged groups.json if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/groups.json
+          git diff --cached --quiet || git commit -m "Auto-update groups.json"
+          git push
