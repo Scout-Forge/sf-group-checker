@@ -1,10 +1,241 @@
 {
   "version": 1,
-  "last_generated": "2025-08-13T07:02:30.892Z",
+  "last_generated": "2025-08-13T18:04:29.172Z",
   "nations": [
     {
       "nation": "England",
       "units": [
+        {
+          "name": "Avon",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Bailiwick of Guernsey",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Bedfordshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Birmingham",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Buckinghamshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Cambridgeshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Central Yorkshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Cheshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "City of Coventry",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Cleveland",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Cornwall",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Cumbria",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Derbyshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Devon",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Dorset",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Durham",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "East Lancashire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "East Sussex",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Essex",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Gloucestershire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Greater London Middlesex West",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
         {
           "name": "Greater London North",
           "type": "county",
@@ -17,19 +248,407 @@
           ]
         },
         {
-          "name": "West Yorkshire",
+          "name": "Greater London North East",
           "type": "county",
-          "website": "https://wyscouts.org.uk",
-          "last_verified": "2025-08-13",
           "children": [
             {
-              "name": "Huddersfield South West",
+              "name": "Barnet",
               "type": "district",
-              "website": "https://www.huddersfieldsouthwestscouts.org.uk",
               "last_verified": "2025-08-13"
-            },
+            }
+          ]
+        },
+        {
+          "name": "Greater London South",
+          "type": "county",
+          "children": [
             {
-              "name": "Huddersfield North",
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Greater London South West",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Greater Manchester East",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Greater Manchester North",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Greater Manchester West",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Hampshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Hereford & Worcester",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Hertfordshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Humberside",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Isle of Man",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Isle of Wight",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Jersey",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Kent",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Leicestershire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Lincolnshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Merseyside",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Norfolk",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "North Yorkshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Northamptonshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Northumberland",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Nottinghamshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Oxfordshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Royal Berkshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Shropshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Solihull",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Somerset",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "South Yorkshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Staffordshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Suffolk",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Surrey",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Warwickshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "West Lancashire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "West Mercia",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "West Sussex",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "West Yorkshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Wiltshire",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
               "type": "district",
               "last_verified": "2025-08-13"
             }
@@ -45,7 +664,309 @@
           "type": "region",
           "children": [
             {
-              "name": "Glasgow South East",
+              "name": "Calder",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Clydesdale",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Eastwood",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Great Western",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Kelvin Valley",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "South East",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "South Western",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Strathcalder",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "East Scotland",
+          "type": "region",
+          "children": [
+            {
+              "name": "Arbroath",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Dundee",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Dunfermline",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Glenrothes & Levenmouth",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Kirkcaldy",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "North Angus",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "North East Fife",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Perth & Kinross",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Rosyth",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "South Angus",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Forth",
+          "type": "region",
+          "children": [
+            {
+              "name": "Clackmannanshire",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Falkirk",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Stirling & Trossachs",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "West Lothian",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Highlands & Islands",
+          "type": "region",
+          "children": [
+            {
+              "name": "Caithness and Sutherland",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Inverness, Nairn, Badenoch & Strathspey",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Lochaber",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Orkney",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Ross, Skye & Lochalsh",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Western Isles",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "North East Scotland",
+          "type": "region",
+          "children": [
+            {
+              "name": "Aberdeen",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Banff & Buchan",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Deeside",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Deveron",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Gordon",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Kincardineshire",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Moray",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Shetland",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "South East Scotland",
+          "type": "region",
+          "children": [
+            {
+              "name": "Borders",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Braid",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Craigalmond",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "East Lothian",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Edinburgh North East",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Midlothian",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Pentland",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "South West Scotland",
+          "type": "region",
+          "children": [
+            {
+              "name": "Ayrshire East",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Dumfriesshire",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Galloway",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Kyle & Carrick",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "North Ayrshire & Arran",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "West Scotland",
+          "type": "region",
+          "children": [
+            {
+              "name": "Argyll",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Dunbartonshire",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Greenock & District",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Paisley",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Renfrewshire",
               "type": "district",
               "last_verified": "2025-08-13"
             }
@@ -57,11 +978,232 @@
       "nation": "Wales",
       "units": [
         {
-          "name": "Clyde",
+          "name": "Brecknock",
           "type": "region",
           "children": [
             {
-              "name": "Glasgow South East",
+              "name": "Breckon & Glanusk",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Buith Wells",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Ystradgynlais",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Cardiff & Vale",
+          "type": "region",
+          "children": [
+            {
+              "name": "Cardiff East",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Cardiff North",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Cardiff West",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Penarth & District",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Tir a Môr",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Carmarthenshire",
+          "type": "region",
+          "children": [
+            {
+              "name": "Carmarthenshire",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Ceredigion",
+          "type": "region",
+          "children": [
+            {
+              "name": "North Ceredigion",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Teifi",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Clwyd",
+          "type": "region",
+          "children": [
+            {
+              "name": "Flintshire",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Llangollen",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Vale of Clwyd",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Wrexham",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Eryri Y Môn",
+          "type": "region",
+          "children": [
+            {
+              "name": "Conwy",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Gwynedd",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Ynys Môn",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Glamorgan",
+          "type": "region",
+          "children": [
+            {
+              "name": "Afan Nedd",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Cwm Newydd",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Swansea & Gower",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Gwent",
+          "type": "region",
+          "children": [
+            {
+              "name": "Blaenau Gwent",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Monmouthshire",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Newport",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Torfaen",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Mid Glamorgan",
+          "type": "region",
+          "children": [
+            {
+              "name": "Bridgend",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "CRAI",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Merthyr Tydfil",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Rhondda Cynon Taf",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Montgomeryshire",
+          "type": "region",
+          "children": [
+            {
+              "name": "Montgomeryshire",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Pembrokeshire",
+          "type": "region",
+          "children": [
+            {
+              "name": "Pembrokeshire",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "Radnor",
+          "type": "region",
+          "children": [
+            {
+              "name": "Radnor",
               "type": "district",
               "last_verified": "2025-08-13"
             }
@@ -73,27 +1215,94 @@
       "nation": "Northern Ireland",
       "units": [
         {
-          "name": "Clyde",
+          "name": "East",
           "type": "region",
           "children": [
             {
-              "name": "Glasgow South East",
+              "name": "East Belfast",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "North Down",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Strangford",
               "type": "district",
               "last_verified": "2025-08-13"
             }
           ]
-        }
-      ]
-    },
-    {
-      "nation": "British Scouting Overseas",
-      "units": [
+        },
         {
-          "name": "Clyde",
+          "name": "North",
           "type": "region",
           "children": [
             {
-              "name": "Glasgow South East",
+              "name": "North Belfast",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "North West Belfast",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Slemish",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "South East Antrim",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "South",
+          "type": "region",
+          "children": [
+            {
+              "name": "Armagh",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Lagan",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Lisburn",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "South Down",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "West",
+          "type": "region",
+          "children": [
+            {
+              "name": "Fermanagh",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Londonderry",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Tyrone",
               "type": "district",
               "last_verified": "2025-08-13"
             }
