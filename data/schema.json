@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scout Forge Scout Group Directory",
+  "type": "object",
+  "properties": {
+    "nation": { "type": "string", "enum": ["England","Scotland","Wales","Northern Ireland", "British Scouting Overseas"] },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name","type","children"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string", "enum": ["county","area","region","district"] },
+          "website": { "type": "string", "format": "uri" },
+          "last_verified": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "children": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name","type"],
+              "properties": {
+                "name": { "type": "string" },
+                "type": { "type": "string", "enum": ["district","group"] },
+                "website": { "type": "string", "format": "uri" },
+                "last_verified": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["nation","units"]
+}

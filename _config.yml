@@ -1,0 +1,4 @@
+# Disable Jekyll so .json files are served as-is
+plugins: []
+markdown: kramdown
+exclude: []

@@ -1,0 +1,8 @@
+{
+  "nation": "Republic of Ireland",
+  "units": [
+    { "name": "Clyde", "type": "region", "children": [
+      { "name": "Glasgow South East", "type": "district", "last_verified": "2025-08-13" }
+    ]}
+  ]
+}
