@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "last_generated": "2025-08-13T07:02:30.892Z",
+  "nations": [
+    {
+      "nation": "England",
+      "units": [
+        {
+          "name": "Greater London North",
+          "type": "county",
+          "children": [
+            {
+              "name": "Barnet",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "name": "West Yorkshire",
+          "type": "county",
+          "website": "https://wyscouts.org.uk",
+          "last_verified": "2025-08-13",
+          "children": [
+            {
+              "name": "Huddersfield South West",
+              "type": "district",
+              "website": "https://www.huddersfieldsouthwestscouts.org.uk",
+              "last_verified": "2025-08-13"
+            },
+            {
+              "name": "Huddersfield North",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nation": "Scotland",
+      "units": [
+        {
+          "name": "Clyde",
+          "type": "region",
+          "children": [
+            {
+              "name": "Glasgow South East",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nation": "Wales",
+      "units": [
+        {
+          "name": "Clyde",
+          "type": "region",
+          "children": [
+            {
+              "name": "Glasgow South East",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nation": "Northern Ireland",
+      "units": [
+        {
+          "name": "Clyde",
+          "type": "region",
+          "children": [
+            {
+              "name": "Glasgow South East",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nation": "British Scouting Overseas",
+      "units": [
+        {
+          "name": "Clyde",
+          "type": "region",
+          "children": [
+            {
+              "name": "Glasgow South East",
+              "type": "district",
+              "last_verified": "2025-08-13"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
