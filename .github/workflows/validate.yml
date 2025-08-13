@@ -2,9 +2,11 @@ name: Validate and Merge Data
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
+
+permissions:
+  contents: write  # needed for the commit step
 
 jobs:
   validate-merge:
@@ -16,16 +18,17 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm install ajv ajv-formats
+      - name: Install deps
+        run: npm install
 
       - name: Validate JSON files
-        run: node tools/validate.js
+        run: npm run validate
 
       - name: Merge JSON files
-        run: node tools/merge.js
+        run: npm run merge
 
       - name: Commit merged groups.json if changed
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"

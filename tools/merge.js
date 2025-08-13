@@ -1,12 +1,42 @@
-import fs from 'fs';
+// tools/merge.js
+import fs from "fs";
 
-const nations = ['england','scotland','wales','roi','bso'];
-let combined = { nations: [] };
+const DATA_DIR = "data";
+const NATIONS = ["england", "scotland", "wales", "northern-ireland"];
 
-nations.forEach(n => {
-  const data = JSON.parse(fs.readFileSync(`data/${n}.json`,'utf8'));
-  combined.nations.push(data);
-});
+function readJSON(path) {
+  return JSON.parse(fs.readFileSync(path, "utf8"));
+}
 
-fs.writeFileSync('data/groups.json', JSON.stringify(combined, null, 2));
-console.log('groups.json updated');
+function main() {
+  const now = new Date().toISOString();
+
+  const combined = {
+    version: 1,
+    last_generated: now,
+    nations: []
+  };
+
+  for (const key of NATIONS) {
+    const path = `${DATA_DIR}/${key}.json`;
+    if (!fs.existsSync(path)) {
+      console.error(`Missing: ${path}`);
+      process.exit(1);
+    }
+    const json = readJSON(path);
+
+    if (!json.nation || !json.units || !Array.isArray(json.units)) {
+      console.error(`Invalid structure in ${path}: expected { nation, units[] }`);
+      process.exit(1);
+    }
+
+    combined.nations.push(json);
+  }
+
+  const outPath = `${DATA_DIR}/groups.json`;
+  fs.writeFileSync(outPath, JSON.stringify(combined, null, 2));
+
+  console.log(`✅ Wrote ${outPath} at ${now}`);
+}
+
+main();

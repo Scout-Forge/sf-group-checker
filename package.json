@@ -1,0 +1,13 @@
+{
+  "name": "scout-uk-directory",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node tools/validate.js",
+    "merge": "node tools/merge.js"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}
