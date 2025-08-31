@@ -3,7 +3,7 @@
 Authoritative sources: PROJECT_PRP.md and EXECUTE_PRP.md. Weâ€™ll tackle items topâ€‘down. Each task lists concrete deliverables, checks, and notes pulled from the PRP.
 
 ## Next Up
-- [ ] Task 4 – Generated JSON validator
+- [ ] Task 5 - Docs: OpenAPI + Redoc
 
 ## Data Source
 - Canonical input is now `Groups_Level.xlsx` (not a prebuilt JSON file).
@@ -105,10 +105,10 @@ Checks:
 Deliverables:
 - [ ] `tools/validate-api.mjs`
 Validation:
-- [ ] Load all generated files and validate against `schema/api-v2.schema.json` using Ajv (+ ajv-formats)
+- [ ] [x] Load all generated files and validate against `schema/api-v2.schema.json` using Ajv (+ ajv-formats)
 - [ ] Enforce sort order by `name` (case-insensitive) for all lists
 - [ ] Enforce uniqueness (ids and slugs where relevant)
-- [ ] Exit non-zero on any validation error
+- [ ] [x] Exit non-zero on any validation error
  - [ ] Validate the source `all-groups.json` against `SourceGroups` schema
 Checks:
 - [ ] Add a `npm run validate:api` to call the validator (optional)
@@ -119,7 +119,7 @@ Deliverables:
 - [ ] `docs/api/index.html` (Redoc) referencing `openapi.yaml`
 Checks:
 - [ ] Redoc renders locally (open in browser) with no errors
-- [ ] Schemas align with generated payload shapes
+- [ ] [x] Schemas align with generated payload shapes
 
 ## Task 6 â€” CI/CD: GitHub Pages
 Deliverables:
@@ -136,13 +136,13 @@ Checks:
 
 ## Task 7 â€” README updates
 Deliverables:
-- [ ] New README section
+- [ ] [x] New README section
 Must cover:
-- [ ] API layout & versioning
+- [ ] [x] API layout & versioning
 - [ ] Slugs and ID rules (group ids use `#slug-of-group`)
 - [ ] Cache busting via `?v=<manifest.hash>`
-- [ ] Local rebuild instructions
-- [ ] Publishing via Actions
+- [ ] [x] Local rebuild instructions
+- [ ] [x] Publishing via Actions
 
 ---
 
@@ -158,3 +158,4 @@ Must cover:
 - Build: `node tools/build-static-api.mjs`
 - Validate: `node tools/validate-api.mjs`
 - Serve locally (if needed): `npx http-server -p 8080` then open docs page.
+
