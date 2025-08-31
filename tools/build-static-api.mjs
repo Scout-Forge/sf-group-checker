@@ -70,12 +70,56 @@ async function writeManifest() {
   await writeJSON('manifest.json', manifest);
 }
 
+function normalizeNations(srcNations = []) {
+  const canonSlugs = new Set(['england', 'scotland', 'wales', 'northern-ireland', 'british-scouting-overseas']);
+  const canonical = [];
+  let overseasNation = null;
+  const aggregatedOverseasUnits = [];
+
+  for (const n of srcNations) {
+    const rawSlug = toSlug(n.name || '');
+    if (canonSlugs.has(rawSlug)) {
+      if (rawSlug === 'british-scouting-overseas') {
+        overseasNation = n;
+      } else {
+        canonical.push(n);
+      }
+    } else {
+      // Treat as an overseas territory: collect its units under BSO
+      const units = Array.isArray(n.units) ? n.units : [];
+      aggregatedOverseasUnits.push(...units);
+    }
+  }
+
+  // Merge aggregated units into existing or new BSO nation
+  if (!overseasNation) {
+    overseasNation = { name: 'British Scouting Overseas', units: [] };
+  }
+  const unitBySlug = new Map();
+  // seed with existing BSO units
+  for (const u of (overseasNation.units || [])) {
+    unitBySlug.set(toSlug(u.name || ''), u);
+  }
+  // add aggregated units, dedupe by slug
+  for (const u of aggregatedOverseasUnits) {
+    const key = toSlug(u.name || '');
+    if (!unitBySlug.has(key)) unitBySlug.set(key, u);
+  }
+  overseasNation.units = sortByName(Array.from(unitBySlug.values()));
+
+  // Push BSO into canonical list
+  canonical.push(overseasNation);
+
+  // Return sorted canonical nations
+  return sortByName(canonical);
+}
+
 async function main() {
   const src = await loadSource();
   await fs.mkdir(OUT, { recursive: true });
 
-  // Nations list
-  const nations = sortByName(src.nations ?? []);
+  // Nations list (normalized to 5 canonical, others under Overseas)
+  const nations = normalizeNations(src.nations ?? []);
   const nationsList = nations.map(n => {
     const nid = nationPathSlug(n.name);
     return {
@@ -192,4 +236,3 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
-
