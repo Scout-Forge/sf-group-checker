@@ -3,7 +3,7 @@
 Authoritative sources: PROJECT_PRP.md and EXECUTE_PRP.md. We’ll tackle items top‑down. Each task lists concrete deliverables, checks, and notes pulled from the PRP.
 
 ## Next Up
-- [ ] Task 0 — XLSX → all-groups.json exporter
+- [ ] Task 2 — API v2 JSON Schema (Ajv)
 
 ## Data Source
 - Canonical input is now `Groups_Level.xlsx` (not a prebuilt JSON file).
@@ -16,29 +16,29 @@ Authoritative sources: PROJECT_PRP.md and EXECUTE_PRP.md. We’ll tackle items t
 - [ ] Redoc renders the OpenAPI spec with no errors
 - [ ] `node tools/build-static-api.mjs` exits 0 and writes `dist/api/v2/`
 - [ ] CI deploy publishes to GitHub Pages on push to `main`
- - [ ] XLSX conversion is deterministic and idempotent (same input → same `all-groups.json`)
+- [ ] XLSX conversion is deterministic and idempotent (same input → same `all-groups.json`)
 
 ---
 
 ## Task 0 — XLSX → all-groups.json exporter (Priority: Highest)
 Deliverables:
-- [ ] `tools/xlsx-to-json.mjs` that reads `Groups_Level.xlsx` and writes a normalized `all-groups.json` (default output `all-groups.json`, overridable via `OUT_JSON` env var)
-- [ ] Column mapping documented in `docs/data-mapping.md` (sheet/columns → nation, unit, district, group, names)
-- [ ] Deterministic normalization (trim, collapse whitespace, apply `toSlug` for id paths; map `british-scouting-overseas` → `overseas` for path segment only)
+- [x] `tools/xlsx-to-json.mjs` that reads `Groups_Level.xlsx` and writes a normalized `all-groups.json` (default output `all-groups.json`, overridable via `OUT_JSON` env var)
+- [x] Column mapping documented in `docs/data-mapping.md` (sheet/columns → nation, unit, district, group, names)
+- [x] Deterministic normalization (trim, collapse whitespace, apply `toSlug` for id paths; map `british-scouting-overseas` → `overseas` for path segment only)
 Normalization rules:
-- [ ] Trim strings; collapse internal whitespace; preserve original `name` alongside derived `slug`
-- [ ] Derive hierarchical structure: Nation → Unit → District → Groups[]
-- [ ] De-duplicate by normalized `name`/`slug` within each level
+- [x] Trim strings; collapse internal whitespace; preserve original `name` alongside derived `slug`
+- [x] Derive hierarchical structure: Nation → Unit → District → Groups[]
+- [x] De-duplicate by normalized `name`/`slug` within each level
 Notes:
 - Preferred XLSX lib: `xlsx` (SheetJS) or `exceljs`. Add dependency before implementing.
 Checks:
-- [ ] Running `node tools/xlsx-to-json.mjs` produces `all-groups.json`
-- [ ] Spot-check sample rows against output structure
+- [x] Running `node tools/xlsx-to-json.mjs` produces `all-groups.json`
+- [x] Spot-check sample rows against output structure
 
 ## Task 1 — Slug utility + tests (Priority: High)
 Deliverables:
-- [ ] `tools/slug.js` exporting `toSlug(name: string): string`
-- [ ] `tests/slug.test.mjs` covering core rules
+- [x] `tools/slug.js` exporting `toSlug(name: string): string`
+- [x] `tests/slug.test.mjs` covering core rules
 Rules (from PRP):
 - lowercase
 - replace `&` with `and`
@@ -56,8 +56,8 @@ export function toSlug(s) {
 }
 ```
 Checks:
-- [ ] Unit tests pass (Node ESM; can use `node tests/slug.test.mjs` with assert)
-- [ ] Edge cases: multiple symbols, ampersands, surrounding spaces, empty → ""
+- [x] Unit tests pass (Node ESM; can use `node tests/slug.test.mjs` with assert)
+- [x] Edge cases: multiple symbols, ampersands, surrounding spaces, empty → ""
 
 ## Task 2 — API v2 JSON Schema (Ajv)
 Deliverables:
