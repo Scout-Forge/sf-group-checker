@@ -116,6 +116,8 @@ function normalizeNations(srcNations = []) {
 
 async function main() {
   const src = await loadSource();
+  // Clean output to avoid stale nations/units from previous runs
+  await fs.rm(OUT, { recursive: true, force: true });
   await fs.mkdir(OUT, { recursive: true });
 
   // Nations list (normalized to 5 canonical, others under Overseas)
