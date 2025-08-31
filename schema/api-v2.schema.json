@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scoutforge.uk/schema/api-v2.schema.json",
+  "$defs": {
+    "Slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "PathId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:/[a-z0-9-]+){0,2}$"
+    },
+    "FragmentId": {
+      "type": "string",
+      "pattern": "^#[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "Href": { "type": "string" },
+    "NationId": {
+      "type": "string",
+      "enum": [
+        "england",
+        "scotland",
+        "wales",
+        "northern-ireland",
+        "overseas"
+      ]
+    },
+    "ParentRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "href"],
+      "properties": {
+        "id": { "$ref": "#/$defs/PathId" },
+        "name": { "type": "string", "minLength": 1 },
+        "href": { "$ref": "#/$defs/Href" }
+      }
+    },
+    "NationEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "href"],
+      "properties": {
+        "id": { "$ref": "#/$defs/NationId" },
+        "name": { "type": "string", "minLength": 1 },
+        "href": { "$ref": "#/$defs/Href" }
+      }
+    },
+    "UnitIndexEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "href", "parent"],
+      "properties": {
+        "id": { "$ref": "#/$defs/PathId" },
+        "name": { "type": "string", "minLength": 1 },
+        "href": { "$ref": "#/$defs/Href" },
+        "parent": { "$ref": "#/$defs/ParentRef" }
+      }
+    },
+    "DistrictIndexEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "href", "parent"],
+      "properties": {
+        "id": { "$ref": "#/$defs/PathId" },
+        "name": { "type": "string", "minLength": 1 },
+        "href": { "$ref": "#/$defs/Href" },
+        "parent": { "$ref": "#/$defs/ParentRef" }
+      }
+    },
+    "GroupEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "$ref": "#/$defs/FragmentId" },
+        "name": { "type": "string", "minLength": 1 }
+      }
+    },
+    "DistrictGroupsResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "href", "parent", "groups"],
+      "properties": {
+        "id": { "$ref": "#/$defs/PathId" },
+        "name": { "type": "string", "minLength": 1 },
+        "href": { "$ref": "#/$defs/Href" },
+        "parent": { "$ref": "#/$defs/ParentRef" },
+        "groups": { "type": "array", "items": { "$ref": "#/$defs/GroupEntry" } }
+      }
+    },
+    "NationsList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/NationEntry" },
+      "minItems": 5
+    },
+    "UnitsGlobal": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/UnitIndexEntry" }
+    },
+    "DistrictsGlobal": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/DistrictIndexEntry" }
+    },
+    "SearchTokens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["token", "ids"],
+        "properties": {
+          "token": { "type": "string", "minLength": 1 },
+          "ids": { "type": "array", "items": { "$ref": "#/$defs/PathId" }, "uniqueItems": true }
+        }
+      }
+    },
+    "SearchUnits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "tokens"],
+        "properties": {
+          "id": { "$ref": "#/$defs/PathId" },
+          "name": { "type": "string", "minLength": 1 },
+          "tokens": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+        }
+      }
+    },
+    "SourceGroups": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nations"],
+      "properties": {
+        "nations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "slug", "units"],
+            "properties": {
+              "name": { "type": "string", "minLength": 1 },
+              "slug": { "$ref": "#/$defs/Slug" },
+              "units": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["name", "slug", "districts"],
+                  "properties": {
+                    "name": { "type": "string", "minLength": 1 },
+                    "slug": { "$ref": "#/$defs/Slug" },
+                    "districts": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["name", "slug", "groups"],
+                        "properties": {
+                          "name": { "type": "string", "minLength": 1 },
+                          "slug": { "$ref": "#/$defs/Slug" },
+                          "groups": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": ["name", "slug"],
+                              "properties": {
+                                "name": { "type": "string", "minLength": 1 },
+                                "slug": { "$ref": "#/$defs/Slug" }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
