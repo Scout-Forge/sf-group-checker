@@ -1,0 +1,203 @@
+openapi: 3.1.0
+info:
+  title: Scout Forge Static API v2
+  version: "2.0.0"
+servers:
+  - url: /api/v2
+paths:
+  /nations.json:
+    get:
+      summary: List nations
+      responses:
+        '200':
+          description: Nations list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NationsList'
+  /nations/{nation}/units/index.json:
+    parameters:
+      - in: path
+        name: nation
+        required: true
+        schema:
+          type: string
+          enum: [england, scotland, wales, northern-ireland, overseas]
+    get:
+      summary: List units for a nation
+      responses:
+        '200':
+          description: Units index
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnitsGlobal'
+  /nations/{nation}/units/{unit}/districts/index.json:
+    parameters:
+      - in: path
+        name: nation
+        required: true
+        schema:
+          type: string
+          enum: [england, scotland, wales, northern-ireland, overseas]
+      - in: path
+        name: unit
+        required: true
+        schema:
+          type: string
+    get:
+      summary: List districts for a unit
+      responses:
+        '200':
+          description: Districts index
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DistrictsGlobal'
+  /nations/{nation}/units/{unit}/districts/{district}/index.json:
+    parameters:
+      - in: path
+        name: nation
+        required: true
+        schema:
+          type: string
+          enum: [england, scotland, wales, northern-ireland, overseas]
+      - in: path
+        name: unit
+        required: true
+        schema:
+          type: string
+      - in: path
+        name: district
+        required: true
+        schema:
+          type: string
+    get:
+      summary: District groups
+      responses:
+        '200':
+          description: District groups payload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DistrictGroupsResponse'
+  /units/index.json:
+    get:
+      summary: Global units index
+      responses:
+        '200':
+          description: Global units
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnitsGlobal'
+  /districts/index.json:
+    get:
+      summary: Global districts index
+      responses:
+        '200':
+          description: Global districts
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DistrictsGlobal'
+  /search/tokens.json:
+    get:
+      summary: Search tokens
+      responses:
+        '200':
+          description: Token to ids map
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchTokens'
+  /search/units.json:
+    get:
+      summary: Search units 
+      responses:
+        '200':
+          description: Units search helper
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchUnits'
+components:
+  schemas:
+    NationsList:
+      type: array
+      items:
+        $ref: '#/components/schemas/NationEntry'
+    NationEntry:
+      type: object
+      required: [id, name, href]
+      properties:
+        id: { type: string, enum: [england, scotland, wales, northern-ireland, overseas] }
+        name: { type: string }
+        href: { type: string }
+    ParentRef:
+      type: object
+      required: [id, name, href]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        href: { type: string }
+    UnitIndexEntry:
+      type: object
+      required: [id, name, href, parent]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        href: { type: string }
+        parent: { $ref: '#/components/schemas/ParentRef' }
+    DistrictIndexEntry:
+      type: object
+      required: [id, name, href, parent]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        href: { type: string }
+        parent: { $ref: '#/components/schemas/ParentRef' }
+    DistrictGroupsResponse:
+      type: object
+      required: [id, name, href, parent, groups]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        href: { type: string }
+        parent: { $ref: '#/components/schemas/ParentRef' }
+        groups:
+          type: array
+          items:
+            type: object
+            required: [id, name]
+            properties:
+              id: { type: string }
+              name: { type: string }
+    UnitsGlobal:
+      type: array
+      items: { $ref: '#/components/schemas/UnitIndexEntry' }
+    DistrictsGlobal:
+      type: array
+      items: { $ref: '#/components/schemas/DistrictIndexEntry' }
+    SearchTokens:
+      type: array
+      items:
+        type: object
+        required: [token, ids]
+        properties:
+          token: { type: string }
+          ids:
+            type: array
+            items: { type: string }
+    SearchUnits:
+      type: array
+      items:
+        type: object
+        required: [id, name, tokens]
+        properties:
+          id: { type: string }
+          name: { type: string }
+          tokens:
+            type: array
+            items: { type: string }
+
