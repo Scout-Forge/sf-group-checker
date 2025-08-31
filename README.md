@@ -33,8 +33,15 @@ node tools/build-static-api.mjs
 node tools/validate-api.mjs
 ```
 
+Or via npm scripts:
+```
+npm run build:api
+npm run validate:api
+```
+
 ### Docs
 - Redoc at `docs/api/index.html` (loads `docs/api/openapi.yaml`).
+- On GitHub Pages (after deploy): `https://scout-forge.github.io/sf-group-checker/docs/api/`.
 
 ## Contributing
 See `CONTRIBUTING.md`. All PRs will be auto-validated via GitHub Actions before consideration for inclusion.
