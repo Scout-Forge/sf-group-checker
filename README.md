@@ -11,8 +11,37 @@ Nation → County/Area/Region → District → District.
 - https://scout-forge.github.io/sf-group-checker/data/wales.json
 <!-- - https://scout-forge.github.io/sf-group-checker/data/bso.json -->
 
-## Format
-See `data/schema.json`.
+## API v2
+
+- Static tree under `/api/v2/` built from `all-groups.json`.
+- Nations: `/api/v2/nations.json` (england, scotland, wales, northern-ireland, overseas)
+- Per-nation: `/api/v2/nations/{nation}/units/index.json`
+- Per-unit: `/api/v2/nations/{nation}/units/{unit}/districts/index.json`
+- Per-district: `/api/v2/nations/{nation}/units/{unit}/districts/{district}/index.json`
+- Global: `/api/v2/units/index.json`, `/api/v2/districts/index.json`
+- Search: `/api/v2/search/tokens.json`, `/api/v2/search/units.json`
+
+### Slugs and IDs
+- Slugs are stable: lowercase; `&` -> `and`; non-alphanumerics -> `-`; collapse; trim.
+- IDs are path-based for nation/unit/district; groups are fragment ids `#slug`.
+- `british-scouting-overseas` maps to path slug `overseas`.
+
+### Build and Validate
+```
+node tools/xlsx-to-json.mjs
+node tools/build-static-api.mjs
+node tools/validate-api.mjs
+```
+
+Or via npm scripts:
+```
+npm run build:api
+npm run validate:api
+```
+
+### Docs
+- Redoc at `docs/api/index.html` (loads `docs/api/openapi.yaml`).
+- On GitHub Pages (after deploy): `https://scout-forge.github.io/sf-group-checker/docs/api/`.
 
 ## Contributing
 See `CONTRIBUTING.md`. All PRs will be auto-validated via GitHub Actions before consideration for inclusion.

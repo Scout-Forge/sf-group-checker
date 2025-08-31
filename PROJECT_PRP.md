@@ -474,7 +474,3 @@ Add the following definitions inside `components` like structure or as standalon
 ## Appendix B: OpenAPI
 
 Use the Redoc spec we generated earlier. Place `docs/api/index.html` and `docs/api/openapi.yaml` as part of this PRP’s deliverables.
-
-## IMPORTANT
-- Use the existing project in Archon for the implementation (using the Archon MCP).
-- Create the tasks for the project and perform Archon RAG queries immediately after reading this PRP.

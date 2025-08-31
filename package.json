@@ -7,7 +7,9 @@
   },
   "scripts": {
     "validate": "node tools/validate.js",
+    "validate:api": "node tools/validate-api.mjs",
     "export:xlsx": "node tools/xlsx-to-json.mjs",
+    "build:api": "node tools/build-static-api.mjs",
     "merge": "node tools/merge.js",
     "sort": "node tools/sort.js",
     "sort:scotland": "node tools/sort.js data/scotland.json",
