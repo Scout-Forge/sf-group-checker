@@ -4,3 +4,4 @@ PR Notes/
 .DS_Store
 node_modules/
 Groups_Level.xlsx
+dist/
