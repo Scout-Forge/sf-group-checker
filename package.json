@@ -2,10 +2,12 @@
   "type": "module",
   "dependencies": {
     "ajv": "^8.17.1",
-    "ajv-formats": "^3.0.1"
+    "ajv-formats": "^3.0.1",
+    "xlsx": "0.18.5"
   },
   "scripts": {
     "validate": "node tools/validate.js",
+    "export:xlsx": "node tools/xlsx-to-json.mjs",
     "merge": "node tools/merge.js",
     "sort": "node tools/sort.js",
     "sort:scotland": "node tools/sort.js data/scotland.json",
