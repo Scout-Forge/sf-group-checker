@@ -109,7 +109,7 @@
         "required": ["token", "ids"],
         "properties": {
           "token": { "type": "string", "minLength": 1 },
-          "ids": { "type": "array", "items": { "$ref": "#/$defs/PathId" } }
+          "ids": { "type": "array", "items": { "$ref": "#/$defs/PathId" }, "uniqueItems": true }
         }
       }
     },
@@ -122,7 +122,7 @@
         "properties": {
           "id": { "$ref": "#/$defs/PathId" },
           "name": { "type": "string", "minLength": 1 },
-          "tokens": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+          "tokens": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
         }
       }
     },
@@ -183,4 +183,3 @@
     }
   }
 }
-

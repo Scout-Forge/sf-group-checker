@@ -3,7 +3,7 @@
 Authoritative sources: PROJECT_PRP.md and EXECUTE_PRP.md. We’ll tackle items top‑down. Each task lists concrete deliverables, checks, and notes pulled from the PRP.
 
 ## Next Up
-- [ ] Task 2 — API v2 JSON Schema (Ajv)
+- [ ] Task 3 – Static API builder
 
 ## Data Source
 - Canonical input is now `Groups_Level.xlsx` (not a prebuilt JSON file).
@@ -59,23 +59,23 @@ Checks:
 - [x] Unit tests pass (Node ESM; can use `node tests/slug.test.mjs` with assert)
 - [x] Edge cases: multiple symbols, ampersands, surrounding spaces, empty → ""
 
-## Task 2 — API v2 JSON Schema (Ajv)
+## Task 2 – API v2 JSON Schema (Ajv)
 Deliverables:
-- [ ] `schema/api-v2.schema.json` (JSON Schema 2020-12)
-- [ ] `$id` present and Ajv-consumable
+- [x] `schema/api-v2.schema.json` (JSON Schema 2020-12)
+- [x] `$id` present and Ajv-consumable
 Subschemas to include:
-- [ ] NationsList
-- [ ] UnitIndexEntry
-- [ ] DistrictIndexEntry
-- [ ] DistrictGroupsResponse
-- [ ] UnitsGlobal
-- [ ] DistrictsGlobal
-- [ ] SearchTokens
-- [ ] SearchUnits
- - [ ] SourceGroups (structure of `all-groups.json` produced from XLSX)
+- [x] NationsList
+- [x] UnitIndexEntry
+- [x] DistrictIndexEntry
+- [x] DistrictGroupsResponse
+- [x] UnitsGlobal
+- [x] DistrictsGlobal
+- [x] SearchTokens
+- [x] SearchUnits
+ - [x] SourceGroups (structure of `all-groups.json` produced from XLSX)
 Checks:
-- [ ] Ajv validates example payloads for each schema
-- [ ] Required fields, enums, formats, and array uniqueness modeled
+- [x] Ajv validates example payloads for each schema
+- [x] Required fields, enums, formats, and array uniqueness modeled
 
 ## Task 3 — Static API builder
 Deliverables:
